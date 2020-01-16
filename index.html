@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>    
+    <body>
+        <header class="header">
+            <nav id="navbar">
+                <div class="navigation">
+                    <ul class="navigation__main">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/Forest-Lullaby.mp4" type="video/mp4">
+                    <source src="img/Forest-Lullaby.webm" type="video/webm">
+                    Your browser is not supported!
+                </video>
+            </div>
+            <div class="header__text">
+                <span class="heading heading__text--left">Lorem ipsum dolor</span>
+                <span class="heading heading__text--center">Mauris</span>
+                <span class="heading heading__text--right">Lorem ipsum dolor sit</span>
+            </div>
+            <a class="header__btn" href="#about">
+                <p class="btn__text">Learn More</p>
+                <p class="btn__text btn__text--arrow">&darr; &darr; &darr;</p>
+            </a>
+        </header>
+        <main>
+            <section class="section__about" id="about">
+                <div class="about">
+                    <div class="about__left">
+                        <img src="img/logo_transparent.png" alt="logo" class="about__logo">
+                    </div>
+                    <div class="about__right">
+                        <h2 class="heading-primary">Lorem ipsum dolor sit</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel, consequat ac lectus. Phasellus nibh orci, facilisis eget lorem tincidunt, feugiat condimentum magna. Donec hendrerit eget ipsum ut vehicula. Duis et imperdiet dolor. Phasellus malesuada elit at purus eleifend faucibus. Cras ac lectus non urna malesuada rhoncus. Integer volutpat arcu in metus pretium, vel bibendum nulla sagittis. Nunc rutrum nec velit ut tincidunt.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section__skills" id="skills">
+                <div class="skills">
+                    <div class="skills__top">
+                        <img src="img/html-js-css.png" alt="html, js, and css logos" class="skills__logo">
+                    </div>
+                    <div class="skills__bottom">
+                        <div class="tech-block">
+                            <p class="tech-block__text">SCSS</p>
+                        </div>
+                        <div class="tech-block">
+                            <p class="tech-block__text">NPM</p>
+                        </div>
+                        <div class="tech-block">
+                            <p class="tech-block__text">NODE</p>
+                        </div>
+                        <div class="tech-block">
+                            <p class="tech-block__text">GIT</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section__portfolio" id="portfolio">
+                <div class="portfolio">
+                    <div class="portfolio__heading">
+                        <h2 class="heading__primary portfolio__heading--text">&nbsp; &nbsp; &nbsp; &nbsp; Portfolio &nbsp; &nbsp; &nbsp; &nbsp;</h2>
+                    </div>
+                    <div class="portfolio__containter">
+                        <div class="portfolio__one">
+                            <div class="portfolio__img">
+                                <img src="img/fitness-helper.GIF" alt="fitness app" class="portfolio__img--el">
+                            </div>
+                            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel.</p>
+                        </div>
+                        <div class="portfolio__two">
+                            <div class="portfolio__img">
+                                <img src="img/fitness-helper.GIF" alt="fitness app" class="portfolio__img--el">
+                            </div>
+                            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel.</p>
+                        </div>
+                        <div class="portfolio__three">
+                            <div class="portfolio__img">
+                                <img src="img/fitness-helper.GIF" alt="fitness app" class="portfolio__img--el">
+                            </div>
+                            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section__contact" id="contact">
+                <div class="contact">
+                    <div class="contact__form-area">
+                        <h2 class="heading__secondary u-margin-bottom-small">Contact</h2>
+                        <p class="contact__form-area--text u-margin-bottom-small">Drop me a line and I'll get back to you asap</p>
+                        <form action="submit" class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Name" id="name" required>
+                                <label for="name" class="form__label">Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea rows="8" class="form__input form__input--body" placeholder="Message" id="name" required></textarea>
+                                <label for="name" class="form__label">Message</label>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
+</html>

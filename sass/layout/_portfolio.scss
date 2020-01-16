@@ -1,0 +1,75 @@
+.portfolio {
+    position: absolute;
+    top: 8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &__heading {
+        padding-top: 1rem;
+        text-align: center;
+
+        &--text {
+            display: inline-block;
+            border-bottom: solid 2px $font-color-dark-2;
+            box-shadow: 0 4px 2px -2px grey;
+        }
+    }
+
+    &__containter {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+        height: 50%;
+    }
+
+    &__one {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        width: 25%;
+        text-align: center;
+        background-color: #f1f2f6;
+        box-shadow: 0 .1rem .5rem #000000;
+    }
+
+    &__two {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        width: 25%;
+        text-align: center;
+        background-color: #f1f2f6;
+        box-shadow: 0 .1rem .5rem #000000;
+    }
+
+    &__three {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        width: 25%;
+        text-align: center;
+        background-color: #f1f2f6;
+        box-shadow: 0 .1rem .5rem #000000;
+    }
+    
+
+    &__img {
+        display: inline-block;
+        margin-top: 1rem;
+        width: 100%;
+
+        &--el {
+            height: 100%;
+            width: 95%;
+            border-radius: .5rem;
+        }
+    }
+
+    &__text {
+        display: block;
+        width: 95%;
+        font-size: $default-font-size;
+    }
+}

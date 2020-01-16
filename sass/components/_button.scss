@@ -1,0 +1,22 @@
+.btn {
+    &,
+    &:link,   
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        // font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    &__text {
+        font-size: $default-font-size;
+        font-weight: 600;
+    }
+}

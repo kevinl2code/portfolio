@@ -1,0 +1,21 @@
+.about {
+    position: absolute;
+    top: 12rem;
+    display: flex;
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        width: 50%;
+        padding-right: 5rem;
+        font-size: $default-font-size;
+    }
+
+    &__logo {
+        padding-left: 8rem;
+        width:70%;
+        height: auto;
+    }
+}

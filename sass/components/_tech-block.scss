@@ -1,0 +1,25 @@
+.tech-block {
+    position: relative;
+    height: 3rem;
+    width: 6rem;
+    border-radius: .3rem;
+    background-color: #a4b0be;
+    color: white;
+    text-align: center;
+    box-shadow: 0 .2rem .6rem .1rem #000000;
+    // animation: moveInBottom 1s ease-out;
+    // animation: all 5.8s;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
