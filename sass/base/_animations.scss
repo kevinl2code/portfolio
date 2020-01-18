@@ -41,3 +41,17 @@
         transform: translate(0); /*Represents the standard position of the element if there existed no effects.*/
     }
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+      animation: fadeIn;
+  }

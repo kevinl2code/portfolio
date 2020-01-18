@@ -1,19 +1,29 @@
 .form {
-    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
 
     &__group {
-        margin-left: 10%;
+        // margin-left: 10%;
         display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
         margin-bottom: 1rem;
         
     }
 
     &__input {
-        padding: .75rem 1.2rem;
-        width:  60%;
+
+        padding: .5rem .9rem;
+        width:  100%;
 
         &--body {
             resize: none;
         }
+    }
+
+    &__label {
+        font-size: 1.2rem;
     }
 }

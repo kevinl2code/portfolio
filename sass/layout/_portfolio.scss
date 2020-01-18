@@ -24,7 +24,7 @@
         height: 50%;
     }
 
-    &__one {
+    &__item {
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
@@ -33,27 +33,6 @@
         background-color: #f1f2f6;
         box-shadow: 0 .1rem .5rem #000000;
     }
-
-    &__two {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        width: 25%;
-        text-align: center;
-        background-color: #f1f2f6;
-        box-shadow: 0 .1rem .5rem #000000;
-    }
-
-    &__three {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        width: 25%;
-        text-align: center;
-        background-color: #f1f2f6;
-        box-shadow: 0 .1rem .5rem #000000;
-    }
-    
 
     &__img {
         display: inline-block;

@@ -9,6 +9,7 @@ const toggleNav = () => {
     if (window.pageYOffset >= navTop) {
         navbar.classList.add("sticky")
         navigation.setAttribute("style", "visibility: visible")
+
     } else {
         navbar.classList.remove("sticky")
         navigation.setAttribute("style", "visibility: hidden")

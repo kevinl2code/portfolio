@@ -32,6 +32,15 @@
     transform: translate(0);
     /*Represents the standard position of the element if there existed no effects.*/ } }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  animation: fadeIn; }
+
 *,
 *::after,
 *::before {
@@ -77,7 +86,7 @@ body {
   text-align: center !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 1rem !important; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
@@ -109,29 +118,43 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
   display: inline-block;
-  border-radius: 10rem;
   transition: all .2s;
   position: relative;
   border: none;
   cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 1.5rem grey;
+  /*first value is x-axis shadow, second is y.  third value is the blur*/ }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(0px);
+  box-shadow: 0 .5rem 1.5rem grey; }
 
 .btn__text {
   font-size: 2rem;
   font-weight: 600; }
 
 .form {
-  left: 50%; }
+  display: flex;
+  flex-direction: column;
+  width: 70%; }
   .form__group {
-    margin-left: 10%;
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     margin-bottom: 1rem; }
   .form__input {
-    padding: .75rem 1.2rem;
-    width: 60%; }
+    padding: .5rem .9rem;
+    width: 100%; }
     .form__input--body {
       resize: none; }
+  .form__label {
+    font-size: 1.2rem; }
 
 .tech-block {
   position: relative;
@@ -179,6 +202,7 @@ body {
     width: 40%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius: 1rem;
     background-color: #a4b0be;
     box-shadow: 0 .1rem .5rem #000000; }
@@ -186,6 +210,10 @@ body {
       font-size: 1.5rem;
       font-weight: 600;
       text-align: center; }
+
+.footer {
+  height: 20rem;
+  background-color: #57606f; }
 
 .header {
   height: 100vh;
@@ -270,23 +298,7 @@ body {
     justify-content: space-evenly;
     margin-top: 4rem;
     height: 50%; }
-  .portfolio__one {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    width: 25%;
-    text-align: center;
-    background-color: #f1f2f6;
-    box-shadow: 0 .1rem .5rem #000000; }
-  .portfolio__two {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    width: 25%;
-    text-align: center;
-    background-color: #f1f2f6;
-    box-shadow: 0 .1rem .5rem #000000; }
-  .portfolio__three {
+  .portfolio__item {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
