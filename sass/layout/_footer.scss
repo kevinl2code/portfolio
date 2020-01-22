@@ -1,4 +1,20 @@
 .footer {
     height: 20rem;
     background-color: $font-color-dark-2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links {
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+
+        &--icon {
+            font-size: 5rem;
+            color: white;
+        }
+    }
 }

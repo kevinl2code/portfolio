@@ -56,7 +56,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Poiret One', cursive, sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 400;
   line-height: 1.7; }
 
@@ -205,6 +205,7 @@ body {
     align-items: center;
     border-radius: 1rem;
     background-color: #a4b0be;
+    background-image: url(../../img/binding_light.png);
     box-shadow: 0 .1rem .5rem #000000; }
     .contact__form-area--text {
       font-size: 1.5rem;
@@ -213,7 +214,17 @@ body {
 
 .footer {
   height: 20rem;
-  background-color: #57606f; }
+  background-color: #57606f;
+  display: flex;
+  justify-content: space-evenly; }
+
+.links__nav {
+  display: flex;
+  list-style: none;
+  text-decoration: none; }
+  .links__nav--icon {
+    font-size: 5rem;
+    color: white; }
 
 .header {
   height: 100vh;
@@ -247,7 +258,13 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   padding-bottom: 1.5rem;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
+  .navigation__logo {
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    margin-top: -6.5rem; }
   .navigation__main {
     display: flex;
     padding-top: 1rem;
@@ -276,8 +293,8 @@ body {
   .sticky a {
     transition: all .5s; }
     .sticky a:hover {
-      color: #57606f;
-      border-bottom: solid .1rem #57606f; }
+      color: #dfe4ea;
+      border-bottom: solid .1rem; }
 
 .portfolio {
   position: absolute;
@@ -305,19 +322,29 @@ body {
     width: 25%;
     text-align: center;
     background-color: #f1f2f6;
-    box-shadow: 0 .1rem .5rem #000000; }
+    box-shadow: 0 .1rem .5rem #000000;
+    transition: all .3s; }
+    .portfolio__item:hover {
+      transform: scale(1.1); }
+    .portfolio__item:hover .portfolio__img {
+      background-color: grey; }
   .portfolio__img {
     display: inline-block;
-    margin-top: 1rem;
-    width: 100%; }
+    border-radius: .5rem;
+    width: auto;
+    background-color: #000;
+    clip-path: polygon(0 0, 100% 0%, 100% 79.99999%, 0 95.55555%); }
     .portfolio__img--el {
+      opacity: 0.6;
       height: 100%;
-      width: 95%;
+      width: 100%;
       border-radius: .5rem; }
   .portfolio__text {
     display: block;
     width: 95%;
     font-size: 2rem; }
+    .portfolio__text--title {
+      font-weight: 600; }
 
 .skills {
   position: absolute;
@@ -346,19 +373,22 @@ body {
   position: relative;
   height: 105vh;
   z-index: -1;
-  background-color: #dfe4ea; }
+  background: url(../../img/paper_fibers.png); }
 
 .section__skills {
   position: relative;
   height: 100vh;
-  background-color: #f1f2f6; }
+  background-color: #f1f2f6;
+  background: url(../../img/satinweave.png); }
 
 .section__portfolio {
   position: relative;
   height: 100vh;
-  background-color: #dfe4ea; }
+  background-color: #dfe4ea;
+  background: url(../../img/paper_fibers.png); }
 
 .section__contact {
   position: relative;
   height: 100vh;
-  background-color: #f1f2f6; }
+  background-color: #f1f2f6;
+  background: url(../../img/satinweave.png); }

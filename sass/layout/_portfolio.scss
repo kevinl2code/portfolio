@@ -32,16 +32,29 @@
         text-align: center;
         background-color: #f1f2f6;
         box-shadow: 0 .1rem .5rem #000000;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover .portfolio__img {
+            background-color: grey;
+        }
     }
 
     &__img {
         display: inline-block;
-        margin-top: 1rem;
-        width: 100%;
+        border-radius: .5rem;
+        width: auto;
+        background-color: #000;
+        clip-path: polygon(0 0, 100% 0%, 100% 79.99999%, 0 95.55555%);
 
         &--el {
+            // background-color: #000;
+            opacity: 0.6;
             height: 100%;
-            width: 95%;
+            width: 100%;
             border-radius: .5rem;
         }
     }
@@ -50,5 +63,9 @@
         display: block;
         width: 95%;
         font-size: $default-font-size;
+
+        &--title {
+            font-weight: 600;
+        }
     }
 }

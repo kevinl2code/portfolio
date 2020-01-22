@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     </head>    
     <body>
         <header class="header">
             <nav id="navbar">
                 <div class="navigation">
+                    <img src="img/logo-nav.png" alt="logo" class="navigation__logo">
                     <ul class="navigation__main">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#skills">Technologies</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -24,9 +26,9 @@
                 </video>
             </div>
             <div class="header__text">
-                <span class="heading heading__text--left">Lorem ipsum dolor</span>
-                <span class="heading heading__text--center">Mauris</span>
-                <span class="heading heading__text--right">Lorem ipsum dolor sit</span>
+                <span class="heading heading__text--left">Allow me to</span>
+                <span class="heading heading__text--center">GROW</span>
+                <span class="heading heading__text--right">Your web presense!</span>
             </div>
             <a class="header__btn" href="#about">
                 <p class="btn__text">Learn More</p>
@@ -40,9 +42,9 @@
                         <img src="img/logo_transparent.png" alt="logo" class="about__logo">
                     </div>
                     <div class="about__right">
-                        <h2 class="heading-primary">Lorem ipsum dolor sit</h2>
+                        <h2 class="heading-primary">Welcome to</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel, consequat ac lectus. Phasellus nibh orci, facilisis eget lorem tincidunt, feugiat condimentum magna. Donec hendrerit eget ipsum ut vehicula. Duis et imperdiet dolor. Phasellus malesuada elit at purus eleifend faucibus. Cras ac lectus non urna malesuada rhoncus. Integer volutpat arcu in metus pretium, vel bibendum nulla sagittis. Nunc rutrum nec velit ut tincidunt.
+                            my website!
                         </p>
                     </div>
                 </div>
@@ -78,20 +80,22 @@
                             <div class="portfolio__img">
                                 <img src="img/fitness-helper.GIF" alt="fitness app" class="portfolio__img--el">
                             </div>
-                            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel.</p>
+                            <p class="portfolio__text portfolio__text--title">Fitness Helper</p>
+                            <p class="portfolio__text"> Technologies used: Javascript, HTML, CSS, SASS</p>
                         </div>
                         <div class="portfolio__item">
+                            <div class="portfolio__img">
+                                <img src="img/classic-calculator.GIF" alt="calculator app" class="portfolio__img--el">
+                            </div>
+                            <p class="portfolio__text portfolio__text--title">Classic Calculator</p>
+                            <p class="portfolio__text"> Technologies used: Javascript, HTML, CSS</p>
+                        </div>
+                        <!-- <div class="portfolio__item">
                             <div class="portfolio__img">
                                 <img src="img/fitness-helper.GIF" alt="fitness app" class="portfolio__img--el">
                             </div>
                             <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel.</p>
-                        </div>
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <img src="img/fitness-helper.GIF" alt="fitness app" class="portfolio__img--el">
-                            </div>
-                            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem tortor, mollis sed bibendum vel.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -122,8 +126,21 @@
             </section>
         </main>
         <footer class="footer">
-            <div></div>
+            <div class="links">
+                <ul class="links__nav">
+                    <li><a href=""><i class="icon ion-logo-linkedin links__nav--icon"></i></a></li>
+                    <li><a href=""><i class="icon ion-logo-github links__nav--icon"></i></a></li>
+                    <li><a href=""><i class="icon ion-md-mail links__nav--icon"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="img/new-logo.png" alt="logo" class="footer__logo">
+            </div>
+            <div class="footer__text">
+                <p>Designed and Built by Kevin Smith &copy; 2020</p>
+            </div>
         </footer>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

@@ -6,6 +6,14 @@
     justify-content: flex-end;
     padding-bottom: 1.5rem;
     width: 100%;
+    overflow: hidden;
+
+    &__logo {
+        position: fixed;
+        top: 0;
+        left: 1rem;
+        margin-top: -6.5rem;
+    }
 
     &__main {
         display: flex;  
@@ -46,8 +54,8 @@
         transition: all .5s;
 
         &:hover {
-            color: #57606f;
-            border-bottom: solid .1rem #57606f;
+            color: #dfe4ea;
+            border-bottom: solid .1rem ;
         }
     }
 }
