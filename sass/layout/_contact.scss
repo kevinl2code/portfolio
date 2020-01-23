@@ -22,5 +22,11 @@
             font-weight: 600;
             text-align: center;
         }
+
+        @include respond(phone) {
+            height: 60%;
+            width: 80%;
+            transform: translateY(25%);
+        }
     }
 }

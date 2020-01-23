@@ -22,6 +22,12 @@
         justify-content: space-evenly;
         margin-top: 4rem;
         height: 50%;
+
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
     }
 
     &__item {
@@ -40,6 +46,14 @@
 
         &:hover .portfolio__img {
             background-color: grey;
+        }
+
+        @include respond(phone) {
+            height: 60%;
+            width: 40%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 5rem;
         }
     }
 

@@ -10,6 +10,11 @@
     // animation: moveInBottom 1s ease-out;
     // animation: all 5.8s;
 
+    @include respond(phone) {
+        width: 8rem;
+        height: 4rem;
+    }
+
     &:hover {
         transform: scale(1.25);
     }

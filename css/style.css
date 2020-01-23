@@ -51,6 +51,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -142,7 +151,8 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  width: 70%; }
+  width: 70%;
+  overflow: hidden; }
   .form__group {
     display: flex;
     flex-direction: column-reverse;
@@ -165,6 +175,10 @@ body {
   color: white;
   text-align: center;
   box-shadow: 0 .2rem .6rem .1rem #000000; }
+  @media (max-width: 37.5em) {
+    .tech-block {
+      width: 8rem;
+      height: 4rem; } }
   .tech-block:hover {
     transform: scale(1.25); }
   .tech-block__text {
@@ -179,16 +193,38 @@ body {
   position: absolute;
   top: 12rem;
   display: flex; }
+  @media (max-width: 37.5em) {
+    .about {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; } }
   .about__left {
-    width: 50%; }
+    width: 50%;
+    display: flex; }
+    @media (max-width: 37.5em) {
+      .about__left {
+        width: 100%;
+        height: auto; } }
   .about__right {
     width: 50%;
     padding-right: 5rem;
-    font-size: 2rem; }
+    padding-left: 5rem;
+    font-size: 2rem;
+    border-left: solid 1px black; }
+    @media (max-width: 37.5em) {
+      .about__right {
+        padding-top: 5rem;
+        width: 100%; } }
   .about__logo {
     padding-left: 8rem;
     width: 70%;
     height: auto; }
+    @media (max-width: 37.5em) {
+      .about__logo {
+        width: 50%;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto; } }
 
 .contact {
   position: absolute;
@@ -211,20 +247,50 @@ body {
       font-size: 1.5rem;
       font-weight: 600;
       text-align: center; }
+    @media (max-width: 37.5em) {
+      .contact__form-area {
+        height: 60%;
+        width: 80%;
+        transform: translateY(25%); } }
 
 .footer {
   height: 20rem;
   background-color: #57606f;
   display: flex;
   justify-content: space-evenly; }
+  .footer__logo {
+    width: 25%; }
+    .footer__logo--img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+  .footer__text {
+    width: 25%;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 11rem; }
 
-.links__nav {
-  display: flex;
-  list-style: none;
-  text-decoration: none; }
-  .links__nav--icon {
-    font-size: 5rem;
-    color: white; }
+.links {
+  width: 25%; }
+  .links__nav {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-evenly;
+    margin-top: 7rem; }
+    .links__nav a {
+      display: inline-block;
+      height: 100%; }
+    .links__nav--icon {
+      transition: all .3s;
+      font-size: 5rem;
+      color: white; }
+      .links__nav--icon-github:hover {
+        color: #333; }
+      .links__nav--icon-linkedin:hover {
+        color: #0077b5; }
+      .links__nav--icon-mail:hover {
+        color: #d44638; }
 
 .header {
   height: 100vh;
@@ -265,6 +331,12 @@ body {
     top: 0;
     left: 1rem;
     margin-top: -6.5rem; }
+    @media (max-width: 75em) {
+      .navigation__logo {
+        margin-top: -7.5rem; } }
+    @media (max-width: 56.25em) {
+      .navigation__logo {
+        margin-top: -9rem; } }
   .navigation__main {
     display: flex;
     padding-top: 1rem;
@@ -315,6 +387,11 @@ body {
     justify-content: space-evenly;
     margin-top: 4rem;
     height: 50%; }
+    @media (max-width: 37.5em) {
+      .portfolio__containter {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; } }
   .portfolio__item {
     display: flex;
     flex-direction: column;
@@ -328,6 +405,13 @@ body {
       transform: scale(1.1); }
     .portfolio__item:hover .portfolio__img {
       background-color: grey; }
+    @media (max-width: 37.5em) {
+      .portfolio__item {
+        height: 60%;
+        width: 40%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5rem; } }
   .portfolio__img {
     display: inline-block;
     border-radius: .5rem;
@@ -352,12 +436,18 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 37.5em) {
+    .skills {
+      height: 65%; } }
   .skills__top {
     height: 50%; }
   .skills__bottom {
     height: 50%;
     display: flex;
     justify-content: space-evenly; }
+    @media (max-width: 37.5em) {
+      .skills__bottom {
+        padding-top: 5rem; } }
   .skills__logo {
     width: 40%;
     display: block;
@@ -368,6 +458,10 @@ body {
     height: auto;
     border-bottom: solid 2px #57606f;
     box-shadow: 0 4px 2px -2px grey; }
+    @media (max-width: 37.5em) {
+      .skills__logo {
+        padding-top: 8rem;
+        width: 80%; } }
 
 .section__about {
   position: relative;
