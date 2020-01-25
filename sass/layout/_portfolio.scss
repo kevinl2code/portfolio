@@ -13,6 +13,11 @@
             display: inline-block;
             border-bottom: solid 2px $font-color-dark-2;
             box-shadow: 0 4px 2px -2px grey;
+
+            @include respond(phone) {
+                margin-top: -3rem;
+                margin-bottom: 4rem;
+            }
         }
     }
 
@@ -21,7 +26,7 @@
         justify-content: center;
         justify-content: space-evenly;
         margin-top: 4rem;
-        height: 50%;
+        height: 50vh;
 
         @include respond(phone) {
             flex-direction: column;
@@ -49,10 +54,9 @@
         }
 
         @include respond(phone) {
-            height: 60%;
-            width: 40%;
-            margin-left: 50%;
-            transform: translateX(-50%);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
             margin-top: 5rem;
         }
     }

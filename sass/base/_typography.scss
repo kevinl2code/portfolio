@@ -20,6 +20,10 @@ body {
         letter-spacing: .5rem;
         color: $font-color-solid-2;
         animation: moveInTop 1s ease-out;
+
+        @include respond(phone) {
+            line-height: 1;
+        }
     }
 
     &__text--center {
@@ -29,6 +33,10 @@ body {
         letter-spacing: .1rem;
         color: $font-color-solid-2;
         animation: fadeIn 2s ease-out;
+
+        @include respond(phone) {
+            line-height: 1;
+        }
     }
 
     &__text--bottom {
@@ -39,6 +47,10 @@ body {
         letter-spacing: .1rem;
         color: $font-color-solid-2;
         animation: fadeIn 4s ease-out;
+
+        @include respond(phone) {
+            line-height: 1;
+        }
     }
 
     &__secondary {
