@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="fonts/stylesheet.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     </head>    
     <body>
@@ -22,31 +23,30 @@
             </nav>
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/Forest-Lullaby.mp4" type="video/mp4">
+                    <source src="img/balloons.mp4" type="video/mp4">
                     <source src="img/Forest-Lullaby.webm" type="video/webm">
                     Your browser is not supported!
                 </video>
             </div>
             <div class="header__text">
-                <span class="heading heading__text--left">Allow me to</span>
-                <span class="heading heading__text--center">GROW</span>
-                <span class="heading heading__text--right">Your web presense!</span>
+                <h1 class="heading heading__text--top">Need a website?</h1>
+                <span class="heading heading__text--center">Good news</span>
+                <span class="heading heading__text--bottom">You came to the right place!</span>
             </div>
-            <a class="header__btn" href="#about">
-                <p class="btn__text">Learn More</p>
-                <p class="btn__text btn__text--arrow">&darr; &darr; &darr;</p>
-            </a>
+            <div class="header__btn" href="#about">
+                <a class="header__btn--link" href="#about"> &nbsp; </a>
+            </div>
         </header>
         <main>
             <section class="section__about" id="about">
                 <div class="about">
                     <div class="about__left" id="about__left">
-                        <img src="img/logo_transparent.png" alt="logo" class="about__logo">
+                        <img src="img/kevin.jpg" alt="kevin" class="about__logo">
                     </div>
                     <div class="about__right">
-                        <h2 class="heading-primary">Welcome to</h2>
-                        <p>
-                            my website!
+                        <p class="heading__primary u-margin-top-tiny">Hi!  I'm Kevin.</p>
+                        <p class="about__text u-margin-top-tiny">
+                            Thanks for your interest in working with me.  As a highly awarded professional, I'm looking forward to putting my proven ability to solve complex problems with innovation solutions to work for you.  I'm confident together, we'll be able to make your vision for online success a reality!
                         </p>
                     </div>
                 </div>
@@ -106,21 +106,21 @@
                     <div class="contact__form-area">
                         <h2 class="heading__secondary u-margin-bottom-small">Get in Touch</h2>
                         <p class="contact__form-area--text u-margin-bottom-small">Fill out this form and I'll respond as soon as possible.</p>
-                        <form action="submit" class="form">
+                        <form method="post" action="index.php" class="form">
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Name" id="name" required>
+                                <input type="text" class="form__input" placeholder="Name" id="name"  name="name" required>
                                 <label for="name" class="form__label">Name</label>
                             </div>
                             <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
                                 <label for="email" class="form__label">Email</label>
                             </div>
                             <div class="form__group">
-                                <textarea rows="8" class="form__input form__input--body" placeholder="Message" id="name" required></textarea>
-                                <label for="name" class="form__label">Message</label>
+                                <textarea rows="8" class="form__input form__input--body" placeholder="Message" id="message" name="message" required></textarea>
+                                <label for="message" class="form__label">Message</label>
                             </div>
                             <div class="form__group">
-                                <button class="btn btn--green">SUBMIT</button>
+                                <input id="submit" name="submit" type="submit" value="Submit" class="btn btn--green"></input>
                             </div>
                         </form>
                     </div>

@@ -3,12 +3,10 @@
     height: 3rem;
     width: 6rem;
     border-radius: .3rem;
-    background-color: #a4b0be;
+    background-color: $font-color-solid;
     color: white;
     text-align: center;
     box-shadow: 0 .2rem .6rem .1rem #000000;
-    // animation: moveInBottom 1s ease-out;
-    // animation: all 5.8s;
 
     @include respond(phone) {
         width: 8rem;

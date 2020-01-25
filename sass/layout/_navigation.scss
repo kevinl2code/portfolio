@@ -54,7 +54,7 @@
     left: 0;
     width: 100%;
     // padding-bottom: 1.5rem;
-    background-color: #a4b0be;
+    background-color: $font-color-solid;
     box-shadow: 0 .1rem .5rem #000000;
     transition: all .2s;
     z-index: 9999;
@@ -62,7 +62,7 @@
         transition: all .5s;
 
         &:hover {
-            color: #dfe4ea;
+            color: $font-color-light-1;
             border-bottom: solid .1rem ;
         }
     }

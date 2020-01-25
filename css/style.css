@@ -1,14 +1,12 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-15rem);
-    /* At 0% of the animation, the element will be positioned -100px on the X axis (ie 100px left)*/ }
+    transform: translateX(-15rem); }
   80% {
     transform: translateX(1rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-    /*Represents the standard position of the element if there existed no effects.*/ } }
+    transform: translate(0); } }
 
 @keyframes moveInRight {
   0% {
@@ -32,14 +30,23 @@
     transform: translate(0);
     /*Represents the standard position of the element if there existed no effects.*/ } }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+    /* At 0% of the animation, the element will be positioned +100px on the X axis (ie 100px right)*/ }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    /*Represents the standard position of the element if there existed no effects.*/ } }
 
-.fadeIn {
-  animation: fadeIn; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 *,
 *::after,
@@ -72,20 +79,30 @@ body {
 .heading {
   backface-visibility: hidden; }
   .heading__primary {
-    font-size: 6rem;
-    font-weight: 600; }
-  .heading__text--left {
-    font-size: 6rem;
-    animation: moveInLeft 1s ease-out;
-    display: block; }
+    letter-spacing: .5rem;
+    font-size: 6rem; }
+  .heading__text--top {
+    display: block;
+    font-family: 'Paint the Sky';
+    font-size: 12rem;
+    letter-spacing: .5rem;
+    color: #deb887;
+    animation: moveInTop 1s ease-out; }
   .heading__text--center {
-    font-size: 6rem;
-    animation: moveInBottom 1s ease-out;
-    display: block; }
-  .heading__text--right {
-    font-size: 6rem;
-    animation: moveInRight 1s ease-out;
-    display: block; }
+    display: block;
+    font-family: 'Paint the Sky';
+    font-size: 8rem;
+    letter-spacing: .1rem;
+    color: #deb887;
+    animation: fadeIn 2s ease-out; }
+  .heading__text--bottom {
+    display: block;
+    font-family: 'Paint the Sky';
+    width: 100%;
+    font-size: 8rem;
+    letter-spacing: .1rem;
+    color: #deb887;
+    animation: fadeIn 4s ease-out; }
   .heading__secondary {
     text-align: center;
     font-size: 4rem;
@@ -103,6 +120,15 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
+.u-margin-top-tiny {
+  margin-top: 2rem !important; }
+
+.u-margin-top-small {
+  margin-top: 4rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 6rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -119,6 +145,21 @@ body {
   opacity: .25;
   overflow: hidden; }
   .bg-video__content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover; }
+
+.bg-video-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .85;
+  overflow: hidden; }
+  .bg-video-1__content {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -191,7 +232,9 @@ body {
 
 .about {
   position: absolute;
-  top: 12rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
   display: flex; }
   @media (max-width: 37.5em) {
     .about {
@@ -216,15 +259,22 @@ body {
         padding-top: 5rem;
         width: 100%; } }
   .about__logo {
-    padding-left: 8rem;
-    width: 70%;
-    height: auto; }
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100rem;
+    width: 50%;
+    box-shadow: 0 .1rem .5rem #000000; }
     @media (max-width: 37.5em) {
       .about__logo {
         width: 50%;
         padding-left: 0;
         margin-left: auto;
         margin-right: auto; } }
+  .about__text {
+    letter-spacing: .2rem; }
 
 .contact {
   position: absolute;
@@ -240,7 +290,6 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    background-color: #a4b0be;
     background-image: url(../../img/binding_light.png);
     box-shadow: 0 .1rem .5rem #000000; }
     .contact__form-area--text {
@@ -301,21 +350,30 @@ body {
     position: absolute;
     top: 40%;
     left: 50%;
+    width: 90%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  .header__btn, .header__btn:link, .header__btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
+  .header__btn {
     position: absolute;
-    text-align: center;
-    bottom: 5%;
-    left: 46%;
-    animation: moveInBottom 1s ease-out;
-    color: inherit; }
-    .header__btn:hover, .header__btn:link:hover, .header__btn:visited:hover {
+    width: 8rem;
+    height: 12rem;
+    vertical-align: bottom;
+    margin-left: -4rem;
+    left: 50%;
+    bottom: 1.5rem;
+    overflow: hidden;
+    background-color: #deb887;
+    animation: fadeIn 5s ease-out;
+    clip-path: polygon(0 61%, 34% 61%, 24% 0, 76% 0, 66% 60%, 100% 61%, 50% 100%); }
+    .header__btn:hover {
       cursor: pointer;
       transform: scale(1.2);
       transition: all .5s ease-in-out; }
+    .header__btn--link, .header__btn--link:link, .header__btn--link:visited {
+      text-decoration: none;
+      display: inline-block;
+      width: 10rem;
+      height: 20rem; }
 
 .navigation {
   position: relative;
@@ -467,22 +525,19 @@ body {
   position: relative;
   height: 105vh;
   z-index: -1;
-  background: url(../../img/paper_fibers.png); }
+  background: url(../img/paper_fibers.png); }
 
 .section__skills {
   position: relative;
   height: 100vh;
-  background-color: #f1f2f6;
-  background: url(../../img/satinweave.png); }
+  background: url(../img/satinweave.png); }
 
 .section__portfolio {
   position: relative;
   height: 100vh;
-  background-color: #dfe4ea;
-  background: url(../../img/paper_fibers.png); }
+  background: url(../img/paper_fibers.png); }
 
 .section__contact {
   position: relative;
   height: 100vh;
-  background-color: #f1f2f6;
-  background: url(../../img/satinweave.png); }
+  background: url(../img/satinweave.png); }

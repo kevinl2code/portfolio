@@ -1,7 +1,7 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-15rem);  /* At 0% of the animation, the element will be positioned -100px on the X axis (ie 100px left)*/
+        transform: translateX(-15rem);
     }
 
     80% {
@@ -10,7 +10,7 @@
 
     100% {
         opacity: 1;
-        transform: translate(0); /*Represents the standard position of the element if there existed no effects.*/
+        transform: translate(0);
     }
 }
 
@@ -41,17 +41,28 @@
         transform: translate(0); /*Represents the standard position of the element if there existed no effects.*/
     }
 }
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);  /* At 0% of the animation, the element will be positioned +100px on the X axis (ie 100px right)*/
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); /*Represents the standard position of the element if there existed no effects.*/
+    }
+}
 
 @keyframes fadeIn {
-    from {
+    0% {
       opacity: 0;
     }
+
+    80% {
+        opacity: 0;
+    }
   
-    to {
+    100% {
       opacity: 1;
     }
-  }
-
-  .fadeIn {
-      animation: fadeIn;
-  }
+}

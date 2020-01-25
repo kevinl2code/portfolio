@@ -9,28 +9,36 @@ body {
     backface-visibility: hidden;
 
     &__primary {
+        letter-spacing: .5rem;
         font-size: 6rem;
-        font-weight: 600;
     }
 
-    &__text--left {
-        font-size: 6rem;
-        animation: moveInLeft 1s ease-out;
+    &__text--top {
         display: block;
-
+        font-family: 'Paint the Sky';
+        font-size: 12rem;
+        letter-spacing: .5rem;
+        color: $font-color-solid-2;
+        animation: moveInTop 1s ease-out;
     }
 
     &__text--center {
-        font-size: 6rem;
-        animation: moveInBottom 1s ease-out;
         display: block;
-
+        font-family: 'Paint the Sky';
+        font-size: 8rem;
+        letter-spacing: .1rem;
+        color: $font-color-solid-2;
+        animation: fadeIn 2s ease-out;
     }
 
-    &__text--right {
-        font-size: 6rem;
-        animation: moveInRight 1s ease-out;
+    &__text--bottom {
         display: block;
+        font-family: 'Paint the Sky';
+        width: 100%;
+        font-size: 8rem;
+        letter-spacing: .1rem;
+        color: $font-color-solid-2;
+        animation: fadeIn 4s ease-out;
     }
 
     &__secondary {
@@ -38,7 +46,5 @@ body {
         font-size: 4rem;
         font-weight: 600;
     }
-
-
 }
 

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Paint the Sky';
+    src: url('PainttheSky-Regular.woff2') format('woff2'),
+        url('PainttheSky-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

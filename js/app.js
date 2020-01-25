@@ -6,7 +6,7 @@ const about = document.querySelector("#about")
 const navTop = about.offsetTop
 
 const toggleNav = () => {
-    if (window.pageYOffset >= navTop) {
+    if (window.pageYOffset >= navTop - 25) {
         navbar.classList.add("sticky")
         navigation.setAttribute("style", "visibility: visible")
 
