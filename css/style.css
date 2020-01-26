@@ -445,6 +445,10 @@ body {
     display: flex;
     padding-top: 1rem;
     list-style: none; }
+    @media (max-width: 37.5em) {
+      .navigation__main {
+        margin-left: auto;
+        margin-right: auto; } }
   .navigation__main li {
     margin-right: 3rem; }
   .navigation__main a {
