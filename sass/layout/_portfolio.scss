@@ -66,6 +66,7 @@
         border-radius: .5rem;
         width: auto;
         background-color: #000;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 79.99999%, 0 95.55555%);
         clip-path: polygon(0 0, 100% 0%, 100% 79.99999%, 0 95.55555%);
 
         &--el {

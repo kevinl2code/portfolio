@@ -11,6 +11,10 @@ body {
     &__primary {
         letter-spacing: .5rem;
         font-size: 6rem;
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
     }
 
     &__text--top {
