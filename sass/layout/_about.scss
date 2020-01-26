@@ -5,7 +5,7 @@
     width: 100%;
     display: flex;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         flex-direction: column;
         justify-content: center;
         align-content: center;
@@ -15,7 +15,7 @@
         width: 50%;
         display: flex;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             width: 100%;
             height: auto;
         }
@@ -28,7 +28,7 @@
         font-size: $default-font-size;
         border-left: solid 1px black;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             border-left: none;
             width: 100%;
         }
@@ -44,7 +44,7 @@
         width:50%;
         box-shadow: 0 .1rem .5rem #000000;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             width: 50%;
             padding-left: 0;
             margin-left: auto;

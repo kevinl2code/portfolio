@@ -28,10 +28,15 @@
         margin-top: 4rem;
         height: 50vh;
 
+        @include respond(tab-port) {
+            height: 20vh;
+        }
+
         @include respond(phone) {
             flex-direction: column;
             justify-content: center;
             align-content: center;
+            height: 50vh;
         }
     }
 

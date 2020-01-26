@@ -248,7 +248,7 @@ body {
   transform: translateY(-50%);
   width: 100%;
   display: flex; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .about {
       flex-direction: column;
       justify-content: center;
@@ -256,7 +256,7 @@ body {
   .about__left {
     width: 50%;
     display: flex; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .about__left {
         width: 100%;
         height: auto; } }
@@ -266,7 +266,7 @@ body {
     padding-left: 5rem;
     font-size: 2rem;
     border-left: solid 1px black; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .about__right {
         border-left: none;
         width: 100%; } }
@@ -279,7 +279,7 @@ body {
     border-radius: 100rem;
     width: 50%;
     box-shadow: 0 .1rem .5rem #000000; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .about__logo {
         width: 50%;
         padding-left: 0;
@@ -309,9 +309,12 @@ body {
       font-size: 1.5rem;
       font-weight: 600;
       text-align: center; }
+    @media (max-width: 56.25em) {
+      .contact__form-area {
+        height: fit-content; } }
     @media (max-width: 37.5em) {
       .contact__form-area {
-        height: 60%;
+        height: fit-content;
         width: 80%;
         transform: translateY(25%); } }
 
@@ -488,11 +491,15 @@ body {
     justify-content: space-evenly;
     margin-top: 4rem;
     height: 50vh; }
+    @media (max-width: 56.25em) {
+      .portfolio__containter {
+        height: 20vh; } }
     @media (max-width: 37.5em) {
       .portfolio__containter {
         flex-direction: column;
         justify-content: center;
-        align-content: center; } }
+        align-content: center;
+        height: 50vh; } }
   .portfolio__item {
     display: flex;
     flex-direction: column;
