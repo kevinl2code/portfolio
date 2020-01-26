@@ -401,6 +401,9 @@ body {
     animation: fadeIn 5s ease-out;
     -webkit-clip-path: polygon(0 61%, 34% 61%, 24% 0, 76% 0, 66% 60%, 100% 61%, 50% 100%);
     clip-path: polygon(0 61%, 34% 61%, 24% 0, 76% 0, 66% 60%, 100% 61%, 50% 100%); }
+    @media (max-width: 56.25em) {
+      .header__btn {
+        bottom: 4.5rem; } }
     @media (max-width: 37.5em) {
       .header__btn {
         bottom: 8.5rem; } }
@@ -581,13 +584,31 @@ body {
   position: relative;
   height: 100vh;
   background: url(../img/satinweave.png); }
+  @media (max-width: 56.25em) {
+    .section__skills {
+      height: 55vh; } }
+  @media (max-width: 37.5em) {
+    .section__skills {
+      height: 100vh; } }
 
 .section__portfolio {
   position: relative;
   height: 100vh;
   background: url(../img/paper_fibers.png); }
+  @media (max-width: 56.25em) {
+    .section__portfolio {
+      height: 55vh; } }
+  @media (max-width: 37.5em) {
+    .section__portfolio {
+      height: 100vh; } }
 
 .section__contact {
   position: relative;
   height: 100vh;
   background: url(../img/satinweave.png); }
+  @media (max-width: 56.25em) {
+    .section__contact {
+      height: 55vh; } }
+  @media (max-width: 37.5em) {
+    .section__contact {
+      height: 100vh; } }
