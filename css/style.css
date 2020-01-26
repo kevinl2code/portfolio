@@ -81,6 +81,9 @@ body {
   .heading__primary {
     letter-spacing: .5rem;
     font-size: 6rem; }
+    @media (max-width: 37.5em) {
+      .heading__primary {
+        font-size: 4rem; } }
   .heading__text--top {
     display: block;
     font-family: 'Paint the Sky';
@@ -393,7 +396,11 @@ body {
     overflow: hidden;
     background-color: #deb887;
     animation: fadeIn 5s ease-out;
+    -webkit-clip-path: polygon(0 61%, 34% 61%, 24% 0, 76% 0, 66% 60%, 100% 61%, 50% 100%);
     clip-path: polygon(0 61%, 34% 61%, 24% 0, 76% 0, 66% 60%, 100% 61%, 50% 100%); }
+    @media (max-width: 37.5em) {
+      .header__btn {
+        bottom: 8.5rem; } }
     .header__btn:hover {
       cursor: pointer;
       transform: scale(1.2);
@@ -510,6 +517,7 @@ body {
     border-radius: .5rem;
     width: auto;
     background-color: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 79.99999%, 0 95.55555%);
     clip-path: polygon(0 0, 100% 0%, 100% 79.99999%, 0 95.55555%); }
     .portfolio__img--el {
       opacity: 0.6;
