@@ -251,8 +251,8 @@ body {
   @media (max-width: 56.25em) {
     .about {
       flex-direction: column;
-      justify-content: flex-start;
-      align-content: center; } }
+      justify-content: center;
+      align-items: center; } }
   .about__left {
     width: 50%;
     display: flex; }
