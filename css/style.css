@@ -250,17 +250,18 @@ body {
   display: flex; }
   @media (max-width: 56.25em) {
     .about {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; } }
+      flex-direction: column; } }
   .about__left {
     width: 50%;
     display: flex; }
     @media (max-width: 56.25em) {
       .about__left {
         width: 100%;
-        height: 30%; } }
+        height: 30%;
+        justify-content: center;
+        align-items: center; } }
   .about__right {
+    display: flex;
     width: 50%;
     padding-right: 5rem;
     padding-left: 5rem;
@@ -270,7 +271,8 @@ body {
       .about__right {
         border-left: none;
         width: 100%;
-        height: 30%; } }
+        height: 30%;
+        align-self: flex-start; } }
   .about__logo {
     margin-top: auto;
     margin-bottom: auto;
@@ -286,7 +288,7 @@ body {
         padding-left: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 30rem; } }
+        align-self: flex-end; } }
   .about__text {
     letter-spacing: .2rem;
     margin-top: -30rem; }
