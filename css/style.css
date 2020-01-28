@@ -262,6 +262,7 @@ body {
         align-items: center; } }
   .about__right {
     display: flex;
+    flex-direction: column;
     width: 50%;
     padding-right: 5rem;
     padding-left: 5rem;
