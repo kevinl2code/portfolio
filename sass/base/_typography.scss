@@ -12,7 +12,8 @@ body {
         letter-spacing: .5rem;
         font-size: 6rem;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
+            text-align: center;
             font-size: 4rem;
         }
     }

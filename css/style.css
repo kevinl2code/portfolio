@@ -81,8 +81,9 @@ body {
   .heading__primary {
     letter-spacing: .5rem;
     font-size: 6rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .heading__primary {
+        text-align: center;
         font-size: 4rem; } }
   .heading__text--top {
     display: block;
@@ -532,7 +533,7 @@ body {
         margin-right: auto;
         margin-top: 5rem; } }
   .portfolio__img {
-    display: inline-block;
+    display: block;
     border-radius: .5rem;
     width: auto;
     background-color: #000;
