@@ -8,6 +8,10 @@
     width: 100%;
     overflow: hidden;
 
+    @include respond(phone) {
+        width: 103%;
+    }
+
     &__logo {
         position: fixed;
         top: 0;

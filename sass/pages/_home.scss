@@ -17,7 +17,7 @@
     }
 
     @include respond(phone) {
-        height: 100vh;
+        height: 80vh;
     }
 }
 
@@ -32,7 +32,7 @@
     }
 
     @include respond(phone) {
-        height: 100vh;
+        height: 94vh;
     }
 }
 
@@ -47,6 +47,6 @@
     }
 
     @include respond(phone) {
-        height: 100vh;
+        height: 95vh;
     }
 }

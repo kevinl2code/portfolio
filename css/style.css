@@ -432,6 +432,9 @@ body {
   padding-bottom: 1.5rem;
   width: 100%;
   overflow: hidden; }
+  @media (max-width: 37.5em) {
+    .navigation {
+      width: 103%; } }
   .navigation__logo {
     position: fixed;
     top: 0;
@@ -529,6 +532,7 @@ body {
     @media (max-width: 37.5em) {
       .portfolio__item {
         width: 70%;
+        height: 70%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5rem; } }
@@ -599,7 +603,7 @@ body {
       height: 55vh; } }
   @media (max-width: 37.5em) {
     .section__skills {
-      height: 100vh; } }
+      height: 80vh; } }
 
 .section__portfolio {
   position: relative;
@@ -610,7 +614,7 @@ body {
       height: 55vh; } }
   @media (max-width: 37.5em) {
     .section__portfolio {
-      height: 100vh; } }
+      height: 94vh; } }
 
 .section__contact {
   position: relative;
@@ -621,4 +625,4 @@ body {
       height: 55vh; } }
   @media (max-width: 37.5em) {
     .section__contact {
-      height: 100vh; } }
+      height: 95vh; } }
