@@ -500,7 +500,7 @@ body {
       @media (max-width: 37.5em) {
         .portfolio__heading--text {
           margin-top: -3rem;
-          margin-bottom: 4rem; } }
+          margin-bottom: -1rem; } }
   .portfolio__containter {
     display: flex;
     justify-content: center;
@@ -515,7 +515,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        height: 50vh; } }
+        height: 80vh;
+        margin-top: 0rem; } }
   .portfolio__item {
     display: flex;
     flex-direction: column;
@@ -535,7 +536,8 @@ body {
         height: 70%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5rem; } }
+        margin-top: 2rem;
+        margin-bottom: 2rem; } }
   .portfolio__img {
     display: block;
     border-radius: .5rem;
